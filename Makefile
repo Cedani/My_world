@@ -63,10 +63,7 @@ all:		$(OBJ)
 		$(CC) -o $(NAME) $(OBJ) $(MAIN) $(SFML_FLAG) $(C_FLAG)
 		make clean
 clean:
-		rm -rf ./lib/init/*.o
-		rm -rf ./lib/linked_list_library/*.o
-		rm -rf ./lib/sett_scene/*.o
-		rm -rf ./lib/loadnsave/*.o
+		rm -rf $(OBJ)
 
 
 fclean: clean
