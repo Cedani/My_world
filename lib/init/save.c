@@ -41,7 +41,7 @@ void save_map2(t_elem *e, FILE *fp)
     char *s = " ";
     char *h = "#";
 
-    for (int y; y < e->height; y += 1) {
+    for (int y = 0; y < e->height; y += 1) {
         for (int x = 0; x < e->width; x += 1) {
             tmp = my_ftostr(e->map2[y][x].x, 6);
             fwrite(tmp, my_strlen(tmp), 1, fp);

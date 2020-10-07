@@ -32,7 +32,6 @@ void updater(t_elem *e, t_res *res, t_button_list *list, t_button_set **s)
     sfVector2f pos = {0, 700};
     sfSprite_setTexture(help_sp, help, sfTrue);
     sfRenderWindow_clear(res->window, sfWhite);
-    sfRenderWindow_clear(res->window, sfWhite);
 
     if (e->scene == 0) {
         update_map(e, list);

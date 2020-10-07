@@ -11,7 +11,7 @@ int check_exist(char *file)
 {
     FILE *fp = NULL;
     int ok = 0;
-    char *tmp = malloc(sizeof(*tmp) * READ_SIZE + 1);
+    char *tmp = malloc(sizeof(*tmp) * (READ_SIZE + 1));
 
     file = my_strcat("./save/", file);
     file = my_strcat(file, ".legend");

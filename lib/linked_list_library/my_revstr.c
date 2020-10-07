@@ -9,10 +9,10 @@
 
 char *my_revstr(char *str)
 {
-    char *ret = malloc(sizeof(*ret) * (my_strlen(str)));
+    char *ret = malloc(sizeof(*ret) * (my_strlen(str) + 1));
     int j = my_strlen(str) - 1;
     int i = 0;
-    char tmp = 0;
+    // char tmp = 0;
 
     my_memset(ret, my_strlen(str));
     for (; j >= 0; j -= 1, i += 1)
